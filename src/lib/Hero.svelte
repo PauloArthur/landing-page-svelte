@@ -1,6 +1,6 @@
 <script>
   import slide1 from '../assets/swiper_slide_1.jpg'
-  import Section from './Section.svelte'
+  import Section from './components/Section.svelte'
 </script>
 
 <!-- Component: Basic Hero Mock -->
