@@ -1,5 +1,5 @@
 <script>
-  import logo from '../assets/logo.png'
+  import logo from '../assets/logo.webp'
 </script>
 
 <!-- Component: Basic Navbar -->

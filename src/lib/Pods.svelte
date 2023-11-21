@@ -1,7 +1,7 @@
 <script>
-  import podImage1 from '../assets/pod_image_1.jpg'
-  import podImage2 from '../assets/pod_image_2.jpg'
-  import podImage3 from '../assets/pod_image_3.jpg'
+  import podImage1 from '../assets/pod_image_1.webp'
+  import podImage2 from '../assets/pod_image_2.webp'
+  import podImage3 from '../assets/pod_image_3.webp'
   import PodCard from './components/PodCard.svelte';
   import Section from './components/Section.svelte'
   const pods = [

@@ -1,5 +1,5 @@
 <script>
-  import contentImage from '../assets/content_image.jpg'
+  import contentImage from '../assets/content_image.webp'
   import Section from './components/Section.svelte'
   const content = {
     title: 'Content Main Title',
