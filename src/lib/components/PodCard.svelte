@@ -1,5 +1,9 @@
-<script>
-  const pod = $$props.pod;
+<script lang="ts">
+  export let pod: {
+    title: string;
+    image: string;
+    description: string;
+  };
 </script>
 
 <!-- Component: Basic pod card -->
