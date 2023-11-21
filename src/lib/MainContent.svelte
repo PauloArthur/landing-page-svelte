@@ -3,7 +3,7 @@
   import Section from './Section.svelte'
   const content = {
     title: 'Content Main Title',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum in pulvinar sed, pellentesque id magna. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum in pulvinar sed, pellentesque id magna.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum in pulvinar sed, pellentesque id magna.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum in pulvinar sed, pellentesque id magna.'.replaceAll('\n', '<br>'),
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentumin pulvinar sed, pellentesque id magna.'.replaceAll('\n', '<br>'),
     image: contentImage,
   }
 </script>
@@ -15,7 +15,7 @@
     <div>
       <img src={content.image} alt="" class="rounded border-2 border-black border-solid lg:mr-16">
     </div>
-    <p>{@html content.text}</p>
+    <p class="text-lg">{@html content.text}</p>
   </div>
 </Section>
 <!-- End Basic Hero Mock-->
