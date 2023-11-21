@@ -24,7 +24,7 @@
 </script>
 
 <Section containerClasses="py-16 2xl:max-w-7xl">
-  <div class="flex flex-row">
+  <div class="flex flex-row gap-6">
     {#each pods as pod}
       <PodCard pod={pod}/>
     {/each}
