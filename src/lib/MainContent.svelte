@@ -8,7 +8,7 @@
   }
 </script>
 
-<!-- Component: Basic Hero Mock -->
+<!-- Component: Main Content -->
 <Section containerClasses="py-16 2xl:max-w-7xl">
   <h1 class="text-center uppercase text-2xl font-bold mb-8">{content.title}</h1>
   <div class="flex flex-row">
@@ -18,7 +18,7 @@
     <p class="text-lg">{@html content.text}</p>
   </div>
 </Section>
-<!-- End Basic Hero Mock-->
+<!-- End Main Content-->
 
 <style>
   h1, p {
