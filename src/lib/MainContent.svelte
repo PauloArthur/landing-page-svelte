@@ -12,8 +12,8 @@
 <Section containerClasses="py-16 2xl:max-w-7xl">
   <h1 class="text-center uppercase text-2xl font-bold mb-8">{content.title}</h1>
   <div class="flex flex-row">
-    <div>
-      <img src={content.image} alt="" class="rounded border-2 border-black border-solid lg:mr-16">
+    <div class="lg:mr-16 w-full">
+      <img src={content.image} alt="" class="rounded border-2 border-black border-solid w-full">
     </div>
     <p class="text-lg">{@html content.text}</p>
   </div>
