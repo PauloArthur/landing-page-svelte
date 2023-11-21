@@ -4,7 +4,7 @@
 </script>
 
 <!-- Component: Basic Hero Mock -->
-<Section>
+<Section containerClasses="2xl:px-0 2xl:max-w-[120rem]">
   <img src={slide1} alt="" class="">
 </Section>
 <!-- End Basic Hero Mock-->
