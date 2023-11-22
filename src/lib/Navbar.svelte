@@ -8,7 +8,7 @@
     <nav aria-label="main navigation" class="flex h-[5.5rem] items-stretch justify-between lg:justify-start font-medium text-slate-700">
       <!-- Brand logo -->
       <a id="WindUI" aria-label="WindUI logo" aria-current="page" class="flex items-center gap-2 py-3 pr-3 text-lg whitespace-nowrap focus:outline-none" href="/">
-        <img src={logo} class="logo" alt="Demo Logo" />
+        <img src={logo} class="h-24 px-0 lg:px-6 py-6" alt="Demo Logo" />
       </a>
       <!-- Mobile trigger -->
       <button class="relative self-center order-10 visible block w-10 h-10 opacity-100 lg:hidden" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,10 +46,3 @@
   </div>
 </header>
 <!-- End Basic Navbar-->
-
-<style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-  }
-</style>

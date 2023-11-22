@@ -12,7 +12,7 @@
 </script>
 
 <!-- Component: Basic Hero Mock -->
-<Section containerClasses="2xl:px-0 2xl:max-w-[120rem]">
+<Section containerClasses="px-0 2xl:max-w-[120rem]">
   <Carousel let:item items={images} on:loadSlider={loadImages}>
     <img alt="" src={item} class="w-full max-w-full max-h-full m-auto" />
   </Carousel>

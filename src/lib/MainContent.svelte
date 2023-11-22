@@ -11,8 +11,8 @@
 <!-- Component: Main Content -->
 <Section containerClasses="py-16 2xl:max-w-7xl">
   <h1 class="text-center uppercase text-2xl font-bold mb-8">{content.title}</h1>
-  <div class="flex flex-row">
-    <div class="lg:mr-16 w-full max-w-[337px]">
+  <div class="flex flex-col items-center lg:flex-row lg:items-start">
+    <div class="mb-8 lg:mr-16 w-full max-w-[337px]">
       <img src={content.image} alt="" class="rounded border-2 border-black border-solid w-full">
     </div>
     <p class="text-lg">{@html content.text}</p>
