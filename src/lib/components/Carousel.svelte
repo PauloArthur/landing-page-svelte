@@ -46,9 +46,9 @@
   <!-- Slides -->
   <div class="overflow-hidden" data-glide-el="track">
     <ul class="relative overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]" >
-      {#each items as item}
+      {#each items as item, key}
         <li>
-          <slot item={item} />
+          <slot {item} {key} />
         </li>
       {/each}
     </ul>
