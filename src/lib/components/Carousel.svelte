@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount, createEventDispatcher } from 'svelte';
-  import Section from './Section.svelte';
 
   const dispatch = createEventDispatcher()
 
@@ -17,7 +16,7 @@
 
   async function loadAndMountGlide () {
     Glide = (await import('@glidejs/glide')).default;
-    let glide = new Glide('.hero-glide', {
+    let glide = new Glide(`.${carouselName}`, {
       gap: 0,
       type: 'carousel',
       focusAt: 'center',
@@ -39,10 +38,11 @@
   });
 
   let Glide;
+  export let carouselName = undefined;
   export let items = [];
 </script>
 
-<div class="relative w-full hero-glide">
+<div class={`relative w-full ${carouselName}`}>
   <!-- Slides -->
   <div class="overflow-hidden" data-glide-el="track">
     <ul class="relative overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]" >

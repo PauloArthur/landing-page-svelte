@@ -7,7 +7,6 @@
   import Carousel from './components/Carousel.svelte'
 
   const mql = window.matchMedia('(max-width: 720px)');
-
   $: mobileView = mql.matches;
 
   const firstPod = [{
@@ -39,7 +38,7 @@
 
 <Section containerClasses="py-16 2xl:max-w-7xl">
   {#if mobileView}
-    <Carousel let:item items={pods} on:loadSlider={loadPods}>
+    <Carousel let:item items={pods} carouselName='pods-glider' on:loadSlider={loadPods}>
       <PodCard pod={item}/>
     </Carousel>
   {:else}

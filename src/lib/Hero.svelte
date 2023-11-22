@@ -13,11 +13,10 @@
 
 <!-- Component: Basic Hero Carousel -->
 <Section sectionClasses="bg-neutral-900 bg-opacity-20" containerClasses="px-0 max-w-[120rem]">
-  <Carousel let:item let:key items={images} on:loadSlider={loadImages}>
+  <Carousel let:item let:key items={images} carouselName='hero-glider' on:loadSlider={loadImages}>
     <enhanced:img
       alt=""
       src={item}
-      sizes="min(1920px, 100vw)"
       class="w-full- max-w-full- max-h-full- m-auto" 
      priority={key === 0} />
   </Carousel>
