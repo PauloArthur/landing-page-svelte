@@ -6,8 +6,9 @@
   import Section from './components/Section.svelte'
   import Carousel from './components/Carousel.svelte'
 
-  const mql = window.matchMedia('(max-width: 720px)');
-  $: mobileView = mql.matches;
+  // const mql = window.matchMedia('(max-width: 720px)');
+  // $: mobileView = mql.matches;
+  $: mobileView = false;
 
   const firstPod = [{
     title: 'Pod Main Title',
