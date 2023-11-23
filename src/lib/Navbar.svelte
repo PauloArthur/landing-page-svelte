@@ -1,5 +1,5 @@
 <script>
-	import logo from '../assets/logo.webp';
+	import logo from '../assets/logo.webp?enhanced&w=190';
 	import { createEmptyArrayOfSize } from '$lib/utils';
 
 	let isOpen = false;
@@ -12,7 +12,7 @@
 
 <!-- Component: Basic Navbar -->
 <header
-	class="relative z-20 w-full shadow-lg bg-neutral-600 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:backdrop-blur-sm lg:after:hidden"
+	class="fixed z-20 w-full shadow-lg bg-neutral-600 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:backdrop-blur-sm lg:after:hidden"
 >
 	<div
 		class="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl lg:px-0 2xl:max-w-[120rem]"
@@ -28,7 +28,7 @@
 				class="flex items-center gap-2 py-3 pr-3 text-lg whitespace-nowrap focus:outline-none"
 				href="/"
 			>
-				<img src={logo} class="h-24 px-0 py-6 lg:px-6" alt="Demo Logo" />
+				<enhanced:img src={logo} class="h-24 py-6 object-fit" alt="Demo Logo" />
 			</a>
 			<!-- Mobile trigger -->
 			<button

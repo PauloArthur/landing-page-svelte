@@ -1,8 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
-	import podImage1 from '../assets/pod_image_1.webp?enhanced';
-	import podImage2 from '../assets/pod_image_2.webp?enhanced';
-	import podImage3 from '../assets/pod_image_3.webp?enhanced';
+	import podImage1 from '../assets/pod_image_1.webp?enhanced&w=400';
+	import podImage2 from '../assets/pod_image_2.webp?enhanced&w=400';
+	import podImage3 from '../assets/pod_image_3.webp?enhanced&w=400';
 	import { PodCard, Section, Carousel } from './components/index';
 
 	const firstPod = [

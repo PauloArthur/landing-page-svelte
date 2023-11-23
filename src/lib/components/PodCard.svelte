@@ -7,13 +7,13 @@
 </script>
 
 <!-- Component: Basic pod card -->
-<div class="overflow-hidden bg-white shadow-md Card text-slate-500 shadow-slate-200">
+<div class="overflow-hidden bg-white rounded-b shadow-md text-slate-500 shadow-slate-200">
 	<!-- Image -->
 	<figure>
-		<enhanced:img src={pod.image} alt="" class="w-full aspect-video" />
+		<enhanced:img src={pod.image} alt="" class="w-full aspect-video group-hover:scale-[1.2] transition-all" />
 	</figure>
 	<!-- Body-->
-	<div class="flex flex-col p-8 Card-content align-center">
+	<div class="flex flex-col p-8 border-2 border-t-0 border-black border-solid align-center text-neutral-900">
 		<header class="pb-4 mb-6 border-b-2 border-dotted border-b-gray-500">
 			<h3 class="text-2xl font-bold text-center uppercase">{pod.title}</h3>
 		</header>
@@ -29,16 +29,4 @@
 <!-- End Basic pod card -->
 
 <style>
-	.Card {
-		border-bottom-left-radius: 0.25rem;
-		border-bottom-right-radius: 0.25rem;
-	}
-	.Card-content {
-		border: 2px solid black;
-		border-top: none;
-	}
-	h3,
-	p {
-		color: theme('colors.neutral.900');
-	}
 </style>
