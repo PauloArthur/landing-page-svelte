@@ -12,7 +12,7 @@
 </script>
 
 <!-- Component: Basic Hero Carousel -->
-<Section sectionClasses="bg-neutral-900 bg-opacity-20" containerClasses="px-0 max-w-[120rem]">
+<Section sectionClasses="bg-neutral-900 bg-opacity-20" containerClasses="!px-0 max-w-[120rem]">
   <Carousel let:item let:key items={images} carouselName='hero-glider' on:loadSlider={loadImages}>
     <img
       alt=""
