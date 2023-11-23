@@ -53,7 +53,15 @@
 <Section containerClasses="py-16 2xl:max-w-7xl">
   {#if isMobileView || sliderLoaded}
     <div class={`${isMobileView && sliderLoaded ? 'block' : 'hidden'}`}>
-      <Carousel let:item items={pods} carouselName='pods-glider' on:loadSlider={loadPods}>
+      <Carousel
+        let:item
+        items={pods}
+        insideDots={false}
+        showNavigation={false}
+        options={{ gap: 6 }}
+        on:loadSlider={loadPods}
+        carouselName='pods-glider'
+      >
         <PodCard pod={item}/>
       </Carousel>
     </div>
