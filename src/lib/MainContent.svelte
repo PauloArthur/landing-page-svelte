@@ -1,6 +1,6 @@
 <script>
+	import { Section } from './components/index';
 	import contentImage from '../assets/content_image.webp?enhanced';
-	import Section from './components/Section.svelte';
 	const content = {
 		title: 'Content Main Title',
 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentum.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi dolor, tincidunt id mauris non, tristique aliquet magna. Morbi consectetur eu ipsum ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel porttitor sem. Cras lacus magna, fermentumin pulvinar sed, pellentesque id magna.'.replaceAll(

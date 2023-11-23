@@ -1,8 +1,7 @@
 <script>
 	import slide1 from '../assets/swiper_slide_1_2x.webp?enhanced&w=3840;1920;1240;768;';
 	import slide2 from '../assets/swiper_slide_2.webp?enhanced&w=3840;1920;1240;768;';
-	import Carousel from './components/Carousel.svelte';
-	import Section from './components/Section.svelte';
+	import { Section, Carousel } from './components/index';
 
 	let images = [slide1];
 

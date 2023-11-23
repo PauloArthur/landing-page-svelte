@@ -3,9 +3,7 @@
 	import podImage1 from '../assets/pod_image_1.webp?enhanced';
 	import podImage2 from '../assets/pod_image_2.webp?enhanced';
 	import podImage3 from '../assets/pod_image_3.webp?enhanced';
-	import PodCard from './components/PodCard.svelte';
-	import Section from './components/Section.svelte';
-	import Carousel from './components/Carousel.svelte';
+	import { PodCard, Section, Carousel } from './components/index';
 
 	const firstPod = [
 		{
