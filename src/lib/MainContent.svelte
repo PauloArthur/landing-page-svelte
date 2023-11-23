@@ -1,5 +1,5 @@
 <script>
-	import contentImage from '../assets/content_image.webp';
+	import contentImage from '../assets/content_image.webp?enhanced';
 	import Section from './components/Section.svelte';
 	const content = {
 		title: 'Content Main Title',
@@ -12,11 +12,11 @@
 </script>
 
 <!-- Component: Main Content -->
-<Section containerClasses="py-16 2xl:max-w-7xl">
-	<h1 class="text-center uppercase text-2xl font-bold mb-8">{content.title}</h1>
-	<div class="flex flex-col items-center lg:flex-row lg:items-start">
-		<div class="mb-8 lg:mr-16 w-full max-w-[337px]">
-			<img src={content.image} alt="" class="rounded border-2 border-black border-solid w-full" />
+<Section containerClasses="py-8 lg:py-16 2xl:max-w-7xl">
+	<h1 class="mb-8 text-2xl font-bold text-center uppercase">{content.title}</h1>
+	<div class="flex flex-col-reverse items-center gap-8 lg:flex-row lg:items-start">
+		<div class="lg:mr-16 w-full max-w-[337px]">
+			<enhanced:img src={content.image} alt="" class="w-full border-2 border-black border-solid rounded" />
 		</div>
 		<p class="text-lg">{@html content.text}</p>
 	</div>

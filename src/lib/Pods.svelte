@@ -1,8 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
-	import podImage1 from '../assets/pod_image_1.webp';
-	import podImage2 from '../assets/pod_image_2.webp';
-	import podImage3 from '../assets/pod_image_3.webp';
+	import podImage1 from '../assets/pod_image_1.webp?enhanced';
+	import podImage2 from '../assets/pod_image_2.webp?enhanced';
+	import podImage3 from '../assets/pod_image_3.webp?enhanced';
 	import PodCard from './components/PodCard.svelte';
 	import Section from './components/Section.svelte';
 	import Carousel from './components/Carousel.svelte';
@@ -54,7 +54,7 @@
 
 <svelte:window on:resize={setIsMobile} />
 
-<Section containerClasses="py-16 2xl:max-w-7xl">
+<Section containerClasses="py-8 lg:py-16 2xl:max-w-7xl">
 	{#if isMobileView || sliderLoaded}
 		<div class={`${isMobileView && sliderLoaded ? 'block' : 'hidden'}`}>
 			<Carousel
