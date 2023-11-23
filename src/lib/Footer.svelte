@@ -1,8 +1,7 @@
 <script>
+  import { createEmptyArrayOfSize } from '$lib/utils'
   import licenseIcon from '../assets/license_icon.webp'
   import paymentIcon from '../assets/payment_icon.webp'
-
-  const createEmptyArrayOfSize = (size) => Array.from({ length: size }, () => null);
 
   const FooterTitleNames = [
     'Section One',

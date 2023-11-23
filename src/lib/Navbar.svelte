@@ -1,5 +1,8 @@
 <script>
   import logo from '../assets/logo.webp'
+  import { createEmptyArrayOfSize } from '$lib/utils'
+
+  const MenuLinks = createEmptyArrayOfSize(7);
 </script>
 
 <!-- Component: Basic Navbar -->
@@ -8,7 +11,7 @@
     <nav aria-label="main navigation" class="flex h-[5.5rem] items-stretch justify-between lg:justify-start font-medium text-slate-700">
       <!-- Brand logo -->
       <a id="WindUI" aria-label="WindUI logo" aria-current="page" class="flex items-center gap-2 py-3 pr-3 text-lg whitespace-nowrap focus:outline-none" href="/">
-        <img src={logo} class="h-24 px-0 lg:px-6 py-6" alt="Demo Logo" />
+        <img src={logo} class="h-24 px-0 py-6 lg:px-6" alt="Demo Logo" />
       </a>
       <!-- Mobile trigger -->
       <button class="relative self-center order-10 visible block w-10 h-10 opacity-100 lg:hidden" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,27 +23,11 @@
       </button>
       <!-- Navigation links -->
       <ul role="menubar" aria-label="Select page" class="invisible absolute top-0 left-0 z-[-1] h-screen w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-neutral-600 px-8 pb-12 pt-28 font-medium opacity-0 transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100">
-        <li role="none" class="flex items-stretch">
-          <a role="menuitem" aria-haspopup="false" class="flex items-center gap-2 py-4 text-white transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-8" href="/"> <span>Menu link</span></a>
-        </li>
-        <li role="none" class="flex items-stretch">
-          <a role="menuitem" aria-haspopup="false" class="flex items-center gap-2 py-4 text-white transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-8" href="/"> <span>Menu link</span> </a>
-        </li>
-        <li role="none" class="flex items-stretch">
-          <a role="menuitem" aria-haspopup="false" class="flex items-center gap-2 py-4 text-white transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-8" href="/"> <span>Menu link</span> </a>
-        </li>
-        <li role="none" class="flex items-stretch">
-          <a role="menuitem" aria-haspopup="false" class="flex items-center gap-2 py-4 text-white transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-8" href="/"> <span>Menu link</span> </a>
-        </li>
-        <li role="none" class="flex items-stretch">
-          <a role="menuitem" aria-haspopup="false" class="flex items-center gap-2 py-4 text-white transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-8" href="/"> <span>Menu link</span> </a>
-        </li>
-        <li role="none" class="flex items-stretch">
-          <a role="menuitem" aria-haspopup="false" class="flex items-center gap-2 py-4 text-white transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-8" href="/"> <span>Menu link</span> </a>
-        </li>
-        <li role="none" class="flex items-stretch">
-          <a role="menuitem" aria-haspopup="false" class="flex items-center gap-2 py-4 text-white transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-8" href="/"> <span>Menu link</span> </a>
-        </li>
+        {#each MenuLinks as _}
+          <li role="none" class="flex items-stretch">
+            <a role="menuitem" aria-haspopup="false" class="flex items-center gap-2 py-4 text-white transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-8" href="/"> <span>Menu link</span></a>
+          </li>
+        {/each}
       </ul>
     </nav>
   </div>
