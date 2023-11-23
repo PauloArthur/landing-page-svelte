@@ -14,7 +14,7 @@
 <!-- Component: Main Content -->
 <Section containerClasses="py-8 lg:py-16 2xl:max-w-7xl">
 	<h1 class="mb-8 text-2xl font-bold text-center uppercase">{content.title}</h1>
-	<div class="flex flex-col-reverse items-center gap-8 lg:flex-row lg:items-start">
+	<div class="flex flex-col items-center gap-8 lg:flex-row lg:items-start">
 		<div class="lg:mr-16 w-full max-w-[337px]">
 			<enhanced:img src={content.image} alt="" class="w-full border-2 border-black border-solid rounded" />
 		</div>
