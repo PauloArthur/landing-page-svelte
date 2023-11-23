@@ -38,7 +38,7 @@
   });
 
   let Glide;
-  export let carouselName = undefined;
+  export let carouselName = '';
   export let items = [];
 </script>
 

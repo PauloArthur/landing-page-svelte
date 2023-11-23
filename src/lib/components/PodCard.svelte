@@ -10,7 +10,7 @@
 <div class="Card overflow-hidden bg-white shadow-md text-slate-500 shadow-slate-200">
   <!-- Image -->
   <figure>
-    <enhanced:img src={pod.image} alt="" class="aspect-video w-full" />
+    <img src={pod.image} alt="" class="aspect-video w-full" />
   </figure>
   <!-- Body-->
   <div class="Card-content p-8 flex flex-col align-center">
