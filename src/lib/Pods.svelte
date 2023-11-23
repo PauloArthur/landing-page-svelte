@@ -1,14 +1,11 @@
 <script>
+  import { onMount } from 'svelte';
   import podImage1 from '../assets/pod_image_1.webp'
   import podImage2 from '../assets/pod_image_2.webp'
   import podImage3 from '../assets/pod_image_3.webp'
   import PodCard from './components/PodCard.svelte';
   import Section from './components/Section.svelte'
   import Carousel from './components/Carousel.svelte'
-
-  // const mql = window.matchMedia('(max-width: 720px)');
-  // $: mobileView = mql.matches;
-  $: mobileView = false;
 
   const firstPod = [{
     title: 'Pod Main Title',
@@ -34,15 +31,34 @@
     pods = allPods;
   }
 
-  let pods = mobileView ? firstPod : allPods;
+  const setIsMobile = () => {
+    let isMobileAux = window.matchMedia('(max-width: 960px)').matches;
+    if (isMobileAux !== isMobileView) {
+      isMobileView = isMobileAux;
+    }
+  }
+
+  onMount(() => {
+    setIsMobile();
+    window.addEventListener('resize', setIsMobile);
+
+    return () =>  window.removeEventListener('resize', setIsMobile);
+  });
+
+  let isMobileView = false;
+  let pods = isMobileView ? firstPod : allPods;
+  $: sliderLoaded = pods.length > 1;
 </script>
 
 <Section containerClasses="py-16 2xl:max-w-7xl">
-  {#if mobileView}
-    <Carousel let:item items={pods} carouselName='pods-glider' on:loadSlider={loadPods}>
-      <PodCard pod={item}/>
-    </Carousel>
-  {:else}
+  {#if isMobileView || sliderLoaded}
+    <div class={`${isMobileView && sliderLoaded ? 'block' : 'hidden'}`}>
+      <Carousel let:item items={pods} carouselName='pods-glider' on:loadSlider={loadPods}>
+        <PodCard pod={item}/>
+      </Carousel>
+    </div>
+  {/if}
+  {#if !isMobileView}
     <div class="flex flex-row gap-6">
       {#each pods as pod}
         <PodCard pod={pod}/>
