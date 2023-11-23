@@ -40,15 +40,14 @@
 
   onMount(() => {
     setIsMobile();
-    window.addEventListener('resize', setIsMobile);
-
-    return () =>  window.removeEventListener('resize', setIsMobile);
   });
 
   let isMobileView = false;
   let pods = isMobileView ? firstPod : allPods;
   $: sliderLoaded = pods.length > 1;
 </script>
+
+<svelte:window on:resize={setIsMobile} />
 
 <Section containerClasses="py-16 2xl:max-w-7xl">
   {#if isMobileView || sliderLoaded}
