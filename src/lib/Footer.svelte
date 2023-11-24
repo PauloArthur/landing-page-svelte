@@ -39,7 +39,7 @@
 			<h3 class="mb-8 text-2xl font-bold text-center uppercase">Payment Logos</h3>
 			<div class="flex flex-wrap lg:max-w-[50%] gap-8 items-center justify-center">
 				{#each PaymentIcons as _}
-					<enhanced:img src={paymentIcon} class="hover:scale-[1.2]" alt="" />
+					<enhanced:img src={paymentIcon} class="hover:scale-[1.2]" alt="" loading="lazy" />
 				{/each}
 			</div>
 		</div>
@@ -54,7 +54,7 @@
 					ut vestibulum. Ut tristique lobortis lectus id lacinia. Sed hendrerit dictum purus, vel
 					porttitor sem. Cras lacus magna, fermentum.
 				</p>
-				<img src={licenseIcon} class="max-h-[73px]" alt="" />
+				<img src={licenseIcon} class="max-h-[73px]" alt="" loading="lazy" />
 			</div>
 		</div>
 		<div class="flex flex-col justify-between gap-4 px-6 py-12 lg:px-0 lg:flex-row">

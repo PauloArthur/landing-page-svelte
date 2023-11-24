@@ -10,7 +10,7 @@
 <div class="overflow-hidden bg-white rounded-b shadow-md text-slate-500 shadow-slate-200 group">
 	<!-- Image -->
 	<figure class="overflow-hidden">
-		<enhanced:img src={pod.image} alt="" class="w-full aspect-video group-hover:scale-[1.2] transition-all" />
+		<enhanced:img src={pod.image} alt="" class="w-full aspect-video group-hover:scale-[1.2] transition-all" loading="lazy" />
 	</figure>
 	<!-- Body-->
 	<div class="flex flex-col p-8 border-2 border-t-0 border-black border-solid align-center text-neutral-900">
