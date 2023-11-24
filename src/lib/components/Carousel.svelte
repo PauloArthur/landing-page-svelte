@@ -117,7 +117,7 @@
 			{#each items as _, key}
 				<button class="p-4 group" data-glide-dir={`=${key}`} aria-label={`goto slide ${key + 1}`}>
 					<span
-						class="block w-4 h-4 transition-colors duration-300 bg-white rounded-full lg:w-6 lg:h-6 ring-1 ring-slate-700 focus:outline-none"
+						class="block w-4 h-4 transition-all duration-300 bg-white rounded-full lg:w-6 lg:h-6 ring-1 ring-slate-700 focus:outline-none hover:scale-[1.3] hover:cursor-pointer"
 					/>
 				</button>
 			{/each}
@@ -128,5 +128,8 @@
 <style>
 	.dot-active span {
 		background-color: theme('colors.slate.500/20') !important;
+	}
+	.dot-active span:hover {
+		background-color: theme('colors.slate.500') !important;
 	}
 </style>
